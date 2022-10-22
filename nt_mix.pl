@@ -22,8 +22,8 @@ while($t1=<FP1>)
 close FP1;
 $poslen=@seq;
 $neglen=@seq1;
-
-if($poslen<=$neglen)
+#print "$poslen\t $neglen\n";
+if($poslen >= $neglen)
 {
     $finlen=$poslen;
 }
